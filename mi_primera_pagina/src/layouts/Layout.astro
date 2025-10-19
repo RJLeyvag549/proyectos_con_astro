@@ -11,10 +11,10 @@ import '../styles/global.css';
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body class="m-0 w-full h-full font-sans bg-gray-50 text-gray-800">
-    
-    <!-- Header -->
-    <header class="bg-blue-700 text-white py-4 shadow-md">
+  <body class="m-0 w-full h-full font-sans bg-black text-white"></body>
+
+    <!-- Header transparente con fondo oscuro -->
+    <header class="bg-gray-900/80 text-white py-4 backdrop-blur-md fixed w-full z-20 shadow-none">
       <div class="container mx-auto px-4 flex justify-between items-center">
         <h1 class="text-2xl font-bold">Mi Sitio Astro</h1>
         <nav class="space-x-4">
@@ -26,12 +26,12 @@ import '../styles/global.css';
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
+    <main class="w-full min-h-screen">
       <slot />
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+    <footer class="bg-gray-800 text-gray-300 py-6">
       <div class="container mx-auto px-4 text-center">
         <p>© 2025 Mi Sitio Astro. Todos los derechos reservados.</p>
         <p class="text-sm">Hecho con ❤️ usando Astro y Tailwind CSS</p>
@@ -40,6 +40,3 @@ import '../styles/global.css';
 
   </body>
 </html>
-
-
-
