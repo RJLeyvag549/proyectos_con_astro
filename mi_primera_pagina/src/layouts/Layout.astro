@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body class="m-0 w-full h-full font-sans bg-gray-50 text-gray-800">
+    
+    <!-- Header -->
+    <header class="bg-blue-700 text-white py-4 shadow-md">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Mi Sitio Astro</h1>
+        <nav class="space-x-4">
+          <a href="/" class="hover:underline hover:text-gray-200 transition">Inicio</a>
+          <a href="/about" class="hover:underline hover:text-gray-200 transition">Acerca</a>
+          <a href="/contact" class="hover:underline hover:text-gray-200 transition">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+      <div class="container mx-auto px-4 text-center">
+        <p>© 2025 Mi Sitio Astro. Todos los derechos reservados.</p>
+        <p class="text-sm">Hecho con ❤️ usando Astro y Tailwind CSS</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+
